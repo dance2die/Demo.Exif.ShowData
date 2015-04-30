@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Exif.ShowData.Console", "Demo.Exif.ShowData.Console\Demo.Exif.ShowData.Console.csproj", "{E2609F1B-83EA-46C3-89F9-EDA1259F932A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Exif.ShowData.Web", "Demo.Exif.ShowData.Web\Demo.Exif.ShowData.Web.csproj", "{2BBFD220-66D3-4062-902B-197A3A85BEBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E2609F1B-83EA-46C3-89F9-EDA1259F932A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2609F1B-83EA-46C3-89F9-EDA1259F932A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2609F1B-83EA-46C3-89F9-EDA1259F932A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBFD220-66D3-4062-902B-197A3A85BEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBFD220-66D3-4062-902B-197A3A85BEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBFD220-66D3-4062-902B-197A3A85BEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBFD220-66D3-4062-902B-197A3A85BEBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
