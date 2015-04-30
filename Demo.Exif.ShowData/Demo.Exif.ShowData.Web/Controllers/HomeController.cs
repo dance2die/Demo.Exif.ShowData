@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Web.Mvc;
 
 namespace Demo.Exif.ShowData.Web.Controllers
@@ -11,7 +9,15 @@ namespace Demo.Exif.ShowData.Web.Controllers
 		// GET: Home
 		public ActionResult Index()
 		{
-			return View();
+			var files = GetFiles();
+			return View(files);
+		}
+
+		private IEnumerable<string> GetFiles()
+		{
+			const string dir = @".\Content";
+			const string searchPattern = "*.jpg";
+			return Directory.EnumerateFiles(dir, searchPattern);
 		}
 	}
 }
