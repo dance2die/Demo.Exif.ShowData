@@ -11,7 +11,7 @@ namespace Demo.Exif.ShowData.Web
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+			//AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }

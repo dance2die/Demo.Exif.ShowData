@@ -1,8 +1,13 @@
-﻿@model IEnumerable<string>
+﻿@model Dictionary<string, ExifNET.Exif>
 
 @{
-	ViewBag.Title = "Index";
+	ViewBag.Title = "Display Exifs";
 }
 
-<h2>Index</h2>
+<h2>Index.cshtml</h2>
 
+@foreach (string key in @Model.Keys)
+{
+	<h3>Key: @key</h3>
+	
+}
