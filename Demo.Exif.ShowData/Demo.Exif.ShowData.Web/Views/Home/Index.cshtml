@@ -1,5 +1,8 @@
 ﻿@model Dictionary<string, ExifNET.Exif>
 
+@using System.IO
+
+
 @{
 	ViewBag.Title = "Display Exifs";
 }
@@ -8,6 +11,20 @@
 
 @foreach (string key in @Model.Keys)
 {
-	<h3>Key: @key</h3>
-	
+	<h3>File Name: @Path.GetFileName(key)</h3>
+	var exif = @Model[key];
+	<table>
+		@*<thead><tr><td>Property Name</td><td>Property Value</td></tr></thead>*@
+		<tbody>
+			@foreach (var property in exif.GetType().GetProperties())
+			{
+				var name = property.Name;
+				var value = property.GetValue(exif, null);
+				<tr>
+					<td>@name</td>
+					<td>@value</td>
+				</tr>
+			}
+		</tbody>
+	</table>
 }
