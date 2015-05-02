@@ -8,7 +8,8 @@ namespace Demo.Exif.ShowData.Web.Controllers
 {
 	public class HomeController : Controller
 	{
-		[CustomAction]
+		//[CustomAction]
+		[ProfileAction]
 		public ActionResult Index()
 		{
 			var files = GetFiles();
