@@ -10,6 +10,7 @@ namespace Demo.Exif.ShowData.Web.Controllers
 	{
 		//[CustomAction]
 		[ProfileAction]
+		[ProfileResult]
 		public ActionResult Index()
 		{
 			var files = GetFiles();
