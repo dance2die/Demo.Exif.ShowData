@@ -2,12 +2,13 @@
 using System.IO;
 using System.Web.Mvc;
 using System.Drawing;
+using Demo.Exif.ShowData.Web.Filters;
 
 namespace Demo.Exif.ShowData.Web.Controllers
 {
 	public class HomeController : Controller
 	{
-		// GET: Home
+		[CustomAction]
 		public ActionResult Index()
 		{
 			var files = GetFiles();
